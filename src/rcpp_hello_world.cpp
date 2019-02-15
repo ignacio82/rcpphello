@@ -25,5 +25,4 @@ NumericMatrix my_matrix(int I, int J, int nthreads) {
 /*** R
 set.seed(42)
   my_matrix(10,10,5)
-  my_matrix2(10,10,5)
   */
