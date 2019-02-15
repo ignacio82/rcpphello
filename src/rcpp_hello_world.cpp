@@ -1,8 +1,6 @@
 #include <Rcpp.h>
 #include <omp.h>
 
-// [[Rcpp::plugins(openmp)]]
-
 using namespace Rcpp;
 
 // [[Rcpp::export]]
@@ -21,8 +19,3 @@ NumericMatrix my_matrix(int I, int J, int nthreads) {
   return A;
 }
 
-
-/*** R
-set.seed(42)
-  my_matrix(10,10,5)
-  */
